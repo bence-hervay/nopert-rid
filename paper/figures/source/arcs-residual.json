@@ -1,0 +1,267 @@
+{
+  "canvas": {
+    "background": "#ffffff",
+    "height_mm": "54",
+    "width_mm": "152"
+  },
+  "layers": [
+    {
+      "kind": "cells",
+      "panel": "p0-0",
+      "source": "arcs-residual-0",
+      "styles": {
+        "Domain": "domain",
+        "Exotic": {
+          "arc+": "arc",
+          "arc-": "arc",
+          "crossing+": "crossing",
+          "crossing-": "crossing",
+          "endpoint+": "endpoint",
+          "endpoint-": "endpoint",
+          "pentagon": "pentagon",
+          "square": "square"
+        },
+        "Global": "global",
+        "Local": "local",
+        "outside": "outside",
+        "unresolved": "unresolved"
+      }
+    },
+    {
+      "kind": "cells",
+      "panel": "p0-1",
+      "source": "arcs-residual-1",
+      "styles": {
+        "Domain": "domain",
+        "Exotic": {
+          "arc+": "arc",
+          "arc-": "arc",
+          "crossing+": "crossing",
+          "crossing-": "crossing",
+          "endpoint+": "endpoint",
+          "endpoint-": "endpoint",
+          "pentagon": "pentagon",
+          "square": "square"
+        },
+        "Global": "global",
+        "Local": "local",
+        "outside": "outside",
+        "unresolved": "unresolved"
+      }
+    },
+    {
+      "kind": "cells",
+      "panel": "p0-2",
+      "source": "arcs-residual-2",
+      "styles": {
+        "Domain": "domain",
+        "Exotic": {
+          "arc+": "arc",
+          "arc-": "arc",
+          "crossing+": "crossing",
+          "crossing-": "crossing",
+          "endpoint+": "endpoint",
+          "endpoint-": "endpoint",
+          "pentagon": "pentagon",
+          "square": "square"
+        },
+        "Global": "global",
+        "Local": "local",
+        "outside": "outside",
+        "unresolved": "unresolved"
+      }
+    },
+    {
+      "connectors": [],
+      "detail": "p0-1",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "p0-0",
+      "style": "inset"
+    },
+    {
+      "connectors": [],
+      "detail": "p0-2",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "p0-0",
+      "style": "inset"
+    }
+  ],
+  "panels": {
+    "p0-0": {
+      "viewport_mm": [
+        [
+          "5",
+          "49"
+        ],
+        [
+          "5",
+          "49"
+        ]
+      ],
+      "world": [
+        [
+          "3/16",
+          "5/8"
+        ],
+        [
+          "-5/16",
+          "1/8"
+        ]
+      ]
+    },
+    "p0-1": {
+      "viewport_mm": [
+        [
+          "54",
+          "98"
+        ],
+        [
+          "5",
+          "49"
+        ]
+      ],
+      "world": [
+        [
+          "102409/500000",
+          "133659/500000"
+        ],
+        [
+          "-1/32",
+          "1/32"
+        ]
+      ]
+    },
+    "p0-2": {
+      "viewport_mm": [
+        [
+          "103",
+          "147"
+        ],
+        [
+          "5",
+          "49"
+        ]
+      ],
+      "world": [
+        [
+          "15/32",
+          "17/32"
+        ],
+        [
+          "-1/32",
+          "1/32"
+        ]
+      ]
+    }
+  },
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 150
+  },
+  "sources": {
+    "arcs-residual-0": {
+      "file": "partitions/arcs-residual-0.partition.json",
+      "kind": "partition"
+    },
+    "arcs-residual-1": {
+      "file": "partitions/arcs-residual-1.partition.json",
+      "kind": "partition"
+    },
+    "arcs-residual-2": {
+      "file": "partitions/arcs-residual-2.partition.json",
+      "kind": "partition"
+    }
+  },
+  "styles": {
+    "arc": {
+      "fill": "#9e9ac8",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "crossing": {
+      "fill": "#c51b8a",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "domain": {
+      "fill": "#bdbdbd",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "endpoint": {
+      "fill": "#fa9fb5",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "global": {
+      "fill": "#9ecae1",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "inset": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#404040",
+        "width_mm": "1/6"
+      }
+    },
+    "local": {
+      "fill": "#74c476",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "outside": {
+      "fill": "#f7f7f7",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "pentagon": {
+      "fill": "#e6550d",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "square": {
+      "fill": "#fdae6b",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "unresolved": {
+      "fill": "#252525",
+      "opacity": "1",
+      "stroke": {
+        "color": "#8c8c8c",
+        "width_mm": "1/80"
+      }
+    }
+  }
+}

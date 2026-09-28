@@ -1,0 +1,750 @@
+{
+  "canvas": {
+    "background": "#ffffff",
+    "height_mm": "188",
+    "width_mm": "150"
+  },
+  "layers": [
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "endpoint-a",
+      "source": "endpoint-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-a",
+      "source": "endpoint-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-a",
+      "source": "endpoint-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-a",
+      "source": "endpoint-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-a",
+      "source": "endpoint-a",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "endpoint-a-zoom",
+      "source": "endpoint-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-a-zoom",
+      "source": "endpoint-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-a-zoom",
+      "source": "endpoint-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-a-zoom",
+      "source": "endpoint-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-a-zoom",
+      "source": "endpoint-a",
+      "style": "plug-edges"
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "endpoint-a-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "endpoint-a",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "endpoint-a-zoom",
+      "text": "×500"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "endpoint-b",
+      "source": "endpoint-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-b",
+      "source": "endpoint-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-b",
+      "source": "endpoint-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-b",
+      "source": "endpoint-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-b",
+      "source": "endpoint-b",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "endpoint-b-zoom",
+      "source": "endpoint-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-b-zoom",
+      "source": "endpoint-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-b-zoom",
+      "source": "endpoint-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-b-zoom",
+      "source": "endpoint-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "endpoint-b-zoom",
+      "source": "endpoint-b",
+      "style": "plug-edges"
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "endpoint-b-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "endpoint-b",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "endpoint-b-zoom",
+      "text": "×500"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "crossing-a",
+      "source": "crossing-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "crossing-a",
+      "source": "crossing-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "crossing-a",
+      "source": "crossing-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "crossing-a",
+      "source": "crossing-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "crossing-a",
+      "source": "crossing-a",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "crossing-a-zoom",
+      "source": "crossing-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "crossing-a-zoom",
+      "source": "crossing-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "crossing-a-zoom",
+      "source": "crossing-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "crossing-a-zoom",
+      "source": "crossing-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "crossing-a-zoom",
+      "source": "crossing-a",
+      "style": "plug-edges"
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "crossing-a-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "crossing-a",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "crossing-a-zoom",
+      "text": "×10"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "crossing-b",
+      "source": "crossing-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "crossing-b",
+      "source": "crossing-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "crossing-b",
+      "source": "crossing-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "crossing-b",
+      "source": "crossing-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "crossing-b",
+      "source": "crossing-b",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "crossing-b-zoom",
+      "source": "crossing-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "crossing-b-zoom",
+      "source": "crossing-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "crossing-b-zoom",
+      "source": "crossing-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "crossing-b-zoom",
+      "source": "crossing-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "crossing-b-zoom",
+      "source": "crossing-b",
+      "style": "plug-edges"
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "crossing-b-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "crossing-b",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "crossing-b-zoom",
+      "text": "×10"
+    }
+  ],
+  "panels": {
+    "crossing-a": {
+      "viewport_mm": [
+        [
+          "4",
+          "46"
+        ],
+        [
+          "96",
+          "138"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "crossing-a-zoom": {
+      "viewport_mm": [
+        [
+          "50",
+          "146"
+        ],
+        [
+          "96",
+          "138"
+        ]
+      ],
+      "world": [
+        [
+          "3284021/117440512",
+          "271719477/117440512"
+        ],
+        [
+          "59884617/16777216",
+          "76661833/16777216"
+        ]
+      ]
+    },
+    "crossing-b": {
+      "viewport_mm": [
+        [
+          "4",
+          "46"
+        ],
+        [
+          "142",
+          "184"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "crossing-b-zoom": {
+      "viewport_mm": [
+        [
+          "50",
+          "146"
+        ],
+        [
+          "142",
+          "184"
+        ]
+      ],
+      "world": [
+        [
+          "1722297/58720256",
+          "135940025/58720256"
+        ],
+        [
+          "59884617/16777216",
+          "76661833/16777216"
+        ]
+      ]
+    },
+    "endpoint-a": {
+      "viewport_mm": [
+        [
+          "4",
+          "46"
+        ],
+        [
+          "4",
+          "46"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "endpoint-a-zoom": {
+      "viewport_mm": [
+        [
+          "50",
+          "146"
+        ],
+        [
+          "4",
+          "46"
+        ]
+      ],
+      "world": [
+        [
+          "3464920161/2936012800",
+          "3599137889/2936012800"
+        ],
+        [
+          "1771143271/419430400",
+          "1779531879/419430400"
+        ]
+      ]
+    },
+    "endpoint-b": {
+      "viewport_mm": [
+        [
+          "4",
+          "46"
+        ],
+        [
+          "50",
+          "92"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "endpoint-b-zoom": {
+      "viewport_mm": [
+        [
+          "50",
+          "146"
+        ],
+        [
+          "50",
+          "92"
+        ]
+      ],
+      "world": [
+        [
+          "3464896011/2936012800",
+          "3599113739/2936012800"
+        ],
+        [
+          "1771143271/419430400",
+          "1779531879/419430400"
+        ]
+      ]
+    }
+  },
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 150
+  },
+  "sources": {
+    "crossing-a": {
+      "coordinates": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "3/10"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "1/10"
+        ]
+      ],
+      "kind": "configuration"
+    },
+    "crossing-b": {
+      "coordinates": [
+        [
+          "198/401",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-199/400",
+          "599/2000"
+        ],
+        [
+          "-1/200",
+          "0"
+        ],
+        [
+          "-201/400",
+          "203/2000"
+        ]
+      ],
+      "kind": "configuration"
+    },
+    "endpoint-a": {
+      "coordinates": [
+        [
+          "-2",
+          "1"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "3/10"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "1/10"
+        ]
+      ],
+      "kind": "configuration"
+    },
+    "endpoint-b": {
+      "coordinates": [
+        [
+          "-656638/327679",
+          "327680/327679"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "3/10"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "1/10"
+        ]
+      ],
+      "kind": "configuration"
+    }
+  },
+  "styles": {
+    "hole-back-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#e08214",
+        "dash_mm": "2/5",
+        "width_mm": "1/10"
+      }
+    },
+    "hole-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#e08214",
+        "width_mm": "1/10"
+      }
+    },
+    "hole-fill": {
+      "fill": "#fcefe0",
+      "opacity": "1",
+      "stroke": null
+    },
+    "inset": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#404040",
+        "width_mm": "1/6"
+      }
+    },
+    "plug-back-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#2166ac",
+        "dash_mm": "2/5",
+        "width_mm": "1/10"
+      }
+    },
+    "plug-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#2166ac",
+        "width_mm": "1/10"
+      }
+    }
+  }
+}

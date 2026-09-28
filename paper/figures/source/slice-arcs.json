@@ -1,0 +1,147 @@
+{
+  "canvas": {
+    "background": "#ffffff",
+    "height_mm": "100",
+    "width_mm": "100"
+  },
+  "layers": [
+    {
+      "kind": "cells",
+      "panel": "plot",
+      "source": "slice",
+      "styles": {
+        "Domain": "domain",
+        "Exotic": {
+          "arc+": "arc",
+          "arc-": "arc",
+          "crossing+": "crossing",
+          "crossing-": "crossing",
+          "endpoint+": "endpoint",
+          "endpoint-": "endpoint",
+          "pentagon": "pentagon",
+          "square": "square"
+        },
+        "Global": "global",
+        "Local": "local",
+        "outside": "outside",
+        "unresolved": "unresolved"
+      }
+    }
+  ],
+  "panels": {
+    "plot": {
+      "viewport_mm": [
+        [
+          "5",
+          "95"
+        ],
+        [
+          "5",
+          "95"
+        ]
+      ],
+      "world": [
+        [
+          "3/16",
+          "5/8"
+        ],
+        [
+          "-5/16",
+          "1/8"
+        ]
+      ]
+    }
+  },
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 150
+  },
+  "sources": {
+    "slice": {
+      "file": "partitions/slice-arcs.partition.json",
+      "kind": "partition"
+    }
+  },
+  "styles": {
+    "arc": {
+      "fill": "#9e9ac8",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "crossing": {
+      "fill": "#c51b8a",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "domain": {
+      "fill": "#bdbdbd",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "endpoint": {
+      "fill": "#fa9fb5",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "global": {
+      "fill": "#9ecae1",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "local": {
+      "fill": "#74c476",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "outside": {
+      "fill": "#f7f7f7",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "pentagon": {
+      "fill": "#e6550d",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "square": {
+      "fill": "#fdae6b",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "unresolved": {
+      "fill": "#252525",
+      "opacity": "1",
+      "stroke": {
+        "color": "#8c8c8c",
+        "width_mm": "1/80"
+      }
+    }
+  }
+}

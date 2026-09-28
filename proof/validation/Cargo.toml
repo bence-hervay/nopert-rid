@@ -1,0 +1,27 @@
+[package]
+name = "rid-validation"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Completeness, irredundancy and pilot experiments for the rid crate, and checks of their transcripts"
+license = "MIT"
+publish = false
+
+# A package of its own, outside the crate's `src/`: the crate's policy
+# fingerprint covers `src/`, `data/` and its manifest and lock file only, so
+# nothing here can change a decision or a certificate.
+[workspace]
+
+[[bin]]
+name = "rid-validation"
+path = "src/main.rs"
+
+[dependencies]
+rid = { path = ".." }
+num-bigint = "=0.4.8"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.151"
+sha2 = "=0.10.9"
+
+[profile.release]
+overflow-checks = true

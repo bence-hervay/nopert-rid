@@ -1,0 +1,25 @@
+[package]
+name = "rid"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Exact search for, and checking of, a certificate that the rhombicosidodecahedron is not Rupert"
+license = "MIT"
+
+[workspace]
+
+[dependencies]
+num-bigint = "=0.4.8"
+num-rational = "=0.4.2"
+num-traits = "=0.2.19"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.151"
+sha2 = "=0.10.9"
+fs2 = "=0.4.3"
+signal-hook = "=0.3.18"
+
+[build-dependencies]
+sha2 = "=0.10.9"
+
+[profile.release]
+overflow-checks = true

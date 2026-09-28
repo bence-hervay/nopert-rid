@@ -1,0 +1,1 @@
+{"catalogue": "validation/catalogue/points.json", "transcript": "completeness.jsonl", "threads": 16, "max_k": 256, "selection": null}

@@ -1,0 +1,259 @@
+{
+  "canvas": {
+    "background": "#ffffff",
+    "height_mm": "66",
+    "width_mm": "138"
+  },
+  "layers": [
+    {
+      "kind": "graph",
+      "panel": "p-whole",
+      "part": "axis",
+      "source": "whole",
+      "style": "axis"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-whole",
+      "part": "control-polygon",
+      "source": "whole",
+      "style": "polygon"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-whole",
+      "part": "curve",
+      "source": "whole",
+      "style": "curve"
+    },
+    {
+      "kind": "control-points",
+      "marker": "1/40",
+      "panel": "p-whole",
+      "source": "whole",
+      "style": "points"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-left",
+      "part": "axis",
+      "source": "whole",
+      "style": "axis"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-left",
+      "part": "curve",
+      "source": "whole",
+      "style": "faint"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-left",
+      "part": "control-polygon",
+      "source": "left",
+      "style": "polygon"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-left",
+      "part": "curve",
+      "source": "left",
+      "style": "curve"
+    },
+    {
+      "kind": "control-points",
+      "marker": "1/40",
+      "panel": "p-left",
+      "source": "left",
+      "style": "points"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-right",
+      "part": "axis",
+      "source": "whole",
+      "style": "axis"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-right",
+      "part": "curve",
+      "source": "whole",
+      "style": "faint"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-right",
+      "part": "control-polygon",
+      "source": "right",
+      "style": "polygon"
+    },
+    {
+      "kind": "graph",
+      "panel": "p-right",
+      "part": "curve",
+      "source": "right",
+      "style": "curve"
+    },
+    {
+      "kind": "control-points",
+      "marker": "1/40",
+      "panel": "p-right",
+      "source": "right",
+      "style": "points"
+    }
+  ],
+  "panels": {
+    "p-left": {
+      "viewport_mm": [
+        [
+          "49",
+          "89"
+        ],
+        [
+          "3",
+          "63"
+        ]
+      ],
+      "world": [
+        [
+          "-1/10",
+          "11/10"
+        ],
+        [
+          "-23/20",
+          "13/20"
+        ]
+      ]
+    },
+    "p-right": {
+      "viewport_mm": [
+        [
+          "95",
+          "135"
+        ],
+        [
+          "3",
+          "63"
+        ]
+      ],
+      "world": [
+        [
+          "-1/10",
+          "11/10"
+        ],
+        [
+          "-23/20",
+          "13/20"
+        ]
+      ]
+    },
+    "p-whole": {
+      "viewport_mm": [
+        [
+          "3",
+          "43"
+        ],
+        [
+          "3",
+          "63"
+        ]
+      ],
+      "world": [
+        [
+          "-1/10",
+          "11/10"
+        ],
+        [
+          "-23/20",
+          "13/20"
+        ]
+      ]
+    }
+  },
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 150
+  },
+  "sources": {
+    "left": {
+      "coefficients": [
+        "-1",
+        "3",
+        "-3"
+      ],
+      "interval": [
+        "0",
+        "1/2"
+      ],
+      "kind": "polynomial",
+      "samples": 120
+    },
+    "right": {
+      "coefficients": [
+        "-1",
+        "3",
+        "-3"
+      ],
+      "interval": [
+        "1/2",
+        "1"
+      ],
+      "kind": "polynomial",
+      "samples": 120
+    },
+    "whole": {
+      "coefficients": [
+        "-1",
+        "3",
+        "-3"
+      ],
+      "interval": [
+        "0",
+        "1"
+      ],
+      "kind": "polynomial",
+      "samples": 240
+    }
+  },
+  "styles": {
+    "axis": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#808080",
+        "width_mm": "1/8"
+      }
+    },
+    "curve": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#2166ac",
+        "width_mm": "2/5"
+      }
+    },
+    "faint": {
+      "fill": null,
+      "opacity": "1/4",
+      "stroke": {
+        "color": "#2166ac",
+        "width_mm": "1/5"
+      }
+    },
+    "points": {
+      "fill": "#e08214",
+      "opacity": "1",
+      "stroke": null
+    },
+    "polygon": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#e08214",
+        "width_mm": "1/5"
+      }
+    }
+  }
+}

@@ -1,0 +1,750 @@
+{
+  "canvas": {
+    "background": "#ffffff",
+    "height_mm": "188",
+    "width_mm": "150"
+  },
+  "layers": [
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "square-a",
+      "source": "square-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "square-a",
+      "source": "square-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "square-a",
+      "source": "square-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "square-a",
+      "source": "square-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "square-a",
+      "source": "square-a",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "square-a-zoom",
+      "source": "square-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "square-a-zoom",
+      "source": "square-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "square-a-zoom",
+      "source": "square-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "square-a-zoom",
+      "source": "square-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "square-a-zoom",
+      "source": "square-a",
+      "style": "plug-edges"
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "square-a-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "square-a",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "square-a-zoom",
+      "text": "×100"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "square-b",
+      "source": "square-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "square-b",
+      "source": "square-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "square-b",
+      "source": "square-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "square-b",
+      "source": "square-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "square-b",
+      "source": "square-b",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "square-b-zoom",
+      "source": "square-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "square-b-zoom",
+      "source": "square-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "square-b-zoom",
+      "source": "square-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "square-b-zoom",
+      "source": "square-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "square-b-zoom",
+      "source": "square-b",
+      "style": "plug-edges"
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "square-b-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "square-b",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "square-b-zoom",
+      "text": "×200"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "pentagon-a",
+      "source": "pentagon-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-a",
+      "source": "pentagon-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-a",
+      "source": "pentagon-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-a",
+      "source": "pentagon-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-a",
+      "source": "pentagon-a",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "pentagon-a-zoom",
+      "source": "pentagon-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-a-zoom",
+      "source": "pentagon-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-a-zoom",
+      "source": "pentagon-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-a-zoom",
+      "source": "pentagon-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-a-zoom",
+      "source": "pentagon-a",
+      "style": "plug-edges"
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "pentagon-a-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "pentagon-a",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "pentagon-a-zoom",
+      "text": "×1000"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "pentagon-b",
+      "source": "pentagon-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-b",
+      "source": "pentagon-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-b",
+      "source": "pentagon-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-b",
+      "source": "pentagon-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-b",
+      "source": "pentagon-b",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "pentagon-b-zoom",
+      "source": "pentagon-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-b-zoom",
+      "source": "pentagon-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-b-zoom",
+      "source": "pentagon-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-b-zoom",
+      "source": "pentagon-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "pentagon-b-zoom",
+      "source": "pentagon-b",
+      "style": "plug-edges"
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "pentagon-b-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "pentagon-b",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "pentagon-b-zoom",
+      "text": "×500"
+    }
+  ],
+  "panels": {
+    "pentagon-a": {
+      "viewport_mm": [
+        [
+          "4",
+          "46"
+        ],
+        [
+          "96",
+          "138"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "pentagon-a-zoom": {
+      "viewport_mm": [
+        [
+          "50",
+          "146"
+        ],
+        [
+          "96",
+          "138"
+        ]
+      ],
+      "world": [
+        [
+          "-10205030257/2936012800",
+          "-10137921393/2936012800"
+        ],
+        [
+          "-73535297/26214400",
+          "-73273153/26214400"
+        ]
+      ]
+    },
+    "pentagon-b": {
+      "viewport_mm": [
+        [
+          "4",
+          "46"
+        ],
+        [
+          "142",
+          "184"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "pentagon-b-zoom": {
+      "viewport_mm": [
+        [
+          "50",
+          "146"
+        ],
+        [
+          "142",
+          "184"
+        ]
+      ],
+      "world": [
+        [
+          "-8661454589/2936012800",
+          "-8527236861/2936012800"
+        ],
+        [
+          "645634873/209715200",
+          "649829177/209715200"
+        ]
+      ]
+    },
+    "square-a": {
+      "viewport_mm": [
+        [
+          "4",
+          "46"
+        ],
+        [
+          "4",
+          "46"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "square-a-zoom": {
+      "viewport_mm": [
+        [
+          "50",
+          "146"
+        ],
+        [
+          "4",
+          "46"
+        ]
+      ],
+      "world": [
+        [
+          "277789433/293601280",
+          "344898297/293601280"
+        ],
+        [
+          "177675043/41943040",
+          "181869347/41943040"
+        ]
+      ]
+    },
+    "square-b": {
+      "viewport_mm": [
+        [
+          "4",
+          "46"
+        ],
+        [
+          "50",
+          "92"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "square-b-zoom": {
+      "viewport_mm": [
+        [
+          "50",
+          "146"
+        ],
+        [
+          "50",
+          "92"
+        ]
+      ],
+      "world": [
+        [
+          "-1953251617/587202560",
+          "-1886142753/587202560"
+        ],
+        [
+          "-55613283/20971520",
+          "-54564707/20971520"
+        ]
+      ]
+    }
+  },
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 150
+  },
+  "sources": {
+    "pentagon-a": {
+      "coordinates": [
+        [
+          "-399/800",
+          "1203/4000"
+        ],
+        [
+          "1/2",
+          "-203/2000"
+        ],
+        [
+          "1/1000",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "kind": "configuration"
+    },
+    "pentagon-b": {
+      "coordinates": [
+        [
+          "-403/800",
+          "1199/4000"
+        ],
+        [
+          "1/2",
+          "-199/2000"
+        ],
+        [
+          "1/1000",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "kind": "configuration"
+    },
+    "square-a": {
+      "coordinates": [
+        [
+          "1/16",
+          "0"
+        ],
+        [
+          "1/16",
+          "0"
+        ],
+        [
+          "-1/16",
+          "0"
+        ],
+        [
+          "1/16",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "kind": "configuration"
+    },
+    "square-b": {
+      "coordinates": [
+        [
+          "1/64",
+          "0"
+        ],
+        [
+          "1/128",
+          "0"
+        ],
+        [
+          "1/1000",
+          "0"
+        ],
+        [
+          "-1/1000",
+          "0"
+        ],
+        [
+          "-1/1000",
+          "0"
+        ]
+      ],
+      "kind": "configuration"
+    }
+  },
+  "styles": {
+    "hole-back-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#e08214",
+        "dash_mm": "2/5",
+        "width_mm": "1/10"
+      }
+    },
+    "hole-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#e08214",
+        "width_mm": "1/10"
+      }
+    },
+    "hole-fill": {
+      "fill": "#fcefe0",
+      "opacity": "1",
+      "stroke": null
+    },
+    "inset": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#404040",
+        "width_mm": "1/6"
+      }
+    },
+    "plug-back-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#2166ac",
+        "dash_mm": "2/5",
+        "width_mm": "1/10"
+      }
+    },
+    "plug-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#2166ac",
+        "width_mm": "1/10"
+      }
+    }
+  }
+}

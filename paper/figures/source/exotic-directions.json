@@ -1,0 +1,220 @@
+{
+  "canvas": {
+    "background": "#ffffff",
+    "height_mm": "60",
+    "width_mm": "445/3"
+  },
+  "layers": [
+    {
+      "kind": "cells",
+      "panel": "p0-0",
+      "source": "exotic-directions-0",
+      "styles": {
+        "Domain": "domain",
+        "Exotic": {
+          "arc+": "arc",
+          "arc-": "arc",
+          "crossing+": "crossing",
+          "crossing-": "crossing",
+          "endpoint+": "endpoint",
+          "endpoint-": "endpoint",
+          "pentagon": "pentagon",
+          "square": "square"
+        },
+        "Global": "global",
+        "Local": "local",
+        "outside": "outside",
+        "unresolved": "unresolved"
+      }
+    },
+    {
+      "kind": "cells",
+      "panel": "p0-1",
+      "source": "exotic-directions-1",
+      "styles": {
+        "Domain": "domain",
+        "Exotic": {
+          "arc+": "arc",
+          "arc-": "arc",
+          "crossing+": "crossing",
+          "crossing-": "crossing",
+          "endpoint+": "endpoint",
+          "endpoint-": "endpoint",
+          "pentagon": "pentagon",
+          "square": "square"
+        },
+        "Global": "global",
+        "Local": "local",
+        "outside": "outside",
+        "unresolved": "unresolved"
+      }
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "p0-1",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "p0-0",
+      "style": "inset"
+    }
+  ],
+  "panels": {
+    "p0-0": {
+      "viewport_mm": [
+        [
+          "5",
+          "265/3"
+        ],
+        [
+          "5",
+          "55"
+        ]
+      ],
+      "world": [
+        [
+          "0",
+          "2/3"
+        ],
+        [
+          "0",
+          "2/5"
+        ]
+      ]
+    },
+    "p0-1": {
+      "viewport_mm": [
+        [
+          "280/3",
+          "430/3"
+        ],
+        [
+          "5",
+          "55"
+        ]
+      ],
+      "world": [
+        [
+          "4499/30000",
+          "5749/30000"
+        ],
+        [
+          "7667/30000",
+          "8917/30000"
+        ]
+      ]
+    }
+  },
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 150
+  },
+  "sources": {
+    "exotic-directions-0": {
+      "file": "partitions/exotic-directions-0.partition.json",
+      "kind": "partition"
+    },
+    "exotic-directions-1": {
+      "file": "partitions/exotic-directions-1.partition.json",
+      "kind": "partition"
+    }
+  },
+  "styles": {
+    "arc": {
+      "fill": "#9e9ac8",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "crossing": {
+      "fill": "#c51b8a",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "domain": {
+      "fill": "#bdbdbd",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "endpoint": {
+      "fill": "#fa9fb5",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "global": {
+      "fill": "#9ecae1",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "inset": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#404040",
+        "width_mm": "1/6"
+      }
+    },
+    "local": {
+      "fill": "#74c476",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "outside": {
+      "fill": "#f7f7f7",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "pentagon": {
+      "fill": "#e6550d",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "square": {
+      "fill": "#fdae6b",
+      "opacity": "1",
+      "stroke": {
+        "color": "#ffffff",
+        "width_mm": "1/40"
+      }
+    },
+    "unresolved": {
+      "fill": "#252525",
+      "opacity": "1",
+      "stroke": {
+        "color": "#8c8c8c",
+        "width_mm": "1/80"
+      }
+    }
+  }
+}

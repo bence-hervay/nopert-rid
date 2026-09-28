@@ -1,0 +1,45 @@
+{
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 200
+  },
+  "canvas": {"width_mm": "180", "height_mm": "100", "background": "#ffffff"},
+  "sources": {
+    "configuration": {
+      "kind": "configuration",
+      "coordinates": [["1/5", "0"], ["1/10", "0"], ["1/8", "0"], ["1/16", "0"], ["-1/32", "0"]]
+    }
+  },
+  "styles": {
+    "hole-shadow": {"fill": "#ff8000", "stroke": null, "opacity": "1/5"},
+    "plug-shadow": {"fill": "#0080ff", "stroke": null, "opacity": "1/5"},
+    "hole-edges": {"fill": null, "stroke": {"color": "#ff8000", "width_mm": "7/50"}, "opacity": "1"},
+    "plug-edges": {"fill": null, "stroke": {"color": "#0080ff", "width_mm": "7/100"}, "opacity": "1"},
+    "inset": {"fill": null, "stroke": {"color": "#404040", "width_mm": "1/5"}, "opacity": "1"}
+  },
+  "panels": {
+    "overview": {"viewport_mm": [["5", "95"], ["5", "95"]], "world": [["-5", "5"], ["-5", "5"]]},
+    "detail": {
+      "viewport_mm": [["110", "170"], ["20", "80"]],
+      "world": [["37/50", "43/50"], ["-441/100", "-429/100"]]
+    }
+  },
+  "layers": [
+    {"kind": "scene", "panel": "overview", "source": "configuration", "body": "hole", "geometry": "silhouette", "style": "hole-shadow"},
+    {"kind": "scene", "panel": "overview", "source": "configuration", "body": "plug", "geometry": "silhouette", "style": "plug-shadow"},
+    {"kind": "scene", "panel": "overview", "source": "configuration", "body": "hole", "geometry": "wireframe", "style": "hole-edges"},
+    {"kind": "scene", "panel": "overview", "source": "configuration", "body": "plug", "geometry": "wireframe", "style": "plug-edges"},
+    {"kind": "scene", "panel": "detail", "source": "configuration", "body": "hole", "geometry": "silhouette", "style": "hole-shadow"},
+    {"kind": "scene", "panel": "detail", "source": "configuration", "body": "plug", "geometry": "silhouette", "style": "plug-shadow"},
+    {"kind": "scene", "panel": "detail", "source": "configuration", "body": "hole", "geometry": "wireframe", "style": "hole-edges"},
+    {"kind": "scene", "panel": "detail", "source": "configuration", "body": "plug", "geometry": "wireframe", "style": "plug-edges"},
+    {
+      "kind": "inset",
+      "overview": "overview",
+      "detail": "detail",
+      "connectors": [{"from": "top-right", "to": "top-left"}, {"from": "bottom-right", "to": "bottom-left"}],
+      "mark_mm": "0",
+      "style": "inset"
+    }
+  ]
+}

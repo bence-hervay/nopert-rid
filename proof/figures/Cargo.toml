@@ -1,0 +1,22 @@
+[package]
+name = "rid-figures"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+publish = false
+description = "Figures of the rhombicosidodecahedron's shadows and of configuration-space slices"
+license = "MIT"
+
+# A package of its own, so that figure code never enters the proof policy.
+[workspace]
+
+[dependencies]
+rid = { path = ".." }
+num-bigint = "=0.4.8"
+num-integer = "=0.1.47"
+num-traits = "=0.2.19"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.151"
+
+[profile.release]
+overflow-checks = true

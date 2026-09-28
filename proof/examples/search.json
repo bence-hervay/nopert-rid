@@ -1,0 +1,9 @@
+{
+  "certificate": "rid.cert",
+  "root": "",
+  "threads": 16,
+  "window": 4096,
+  "max_depth": 4096,
+  "depth_limit": null,
+  "max_decisions": null
+}

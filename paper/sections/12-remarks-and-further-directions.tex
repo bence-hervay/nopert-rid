@@ -1,0 +1,130 @@
+% !TEX root = ../main.tex
+\pagebreak[0]
+\section{Remarks and further directions}\label{sec:remarks-and-further-directions}
+
+\subsection{Relation to previous work}\label{subsec:relation-to-previous-work}
+
+Most of the tools used here are established. Subdividing boxes of
+parameters until a sufficient condition holds on each is the classical
+branch and bound method. Exact arithmetic in a quadratic field, support
+separation of projected vertices, and the centring argument for centrally
+symmetric bodies are standard in this context; separation by a supporting
+line also underlies the global theorem of
+\citet[Section~4, Theorem~17]{SteiningerYurkevichNopertV2}. Bernstein
+coefficients as bounds for the range of a multivariate polynomial on a box
+go back at least to \citet{Garloff1986}.
+
+Their combination, however, is new in this context. The parametrisation
+turns every comparison into a polynomial inequality with coefficients in
+$\mathbb Q(\sqrt5)$, so that no trigonometric function has to be bounded
+and every step can be checked exactly. Bernstein coefficients then serve as
+the single sign test of the whole proof, from the domain inequalities to
+the gap polynomials, and the zoom lemma extends that same test to the
+neighbourhoods of touch configurations. Together they make the entire
+argument a finite list of exact checks, which a certificate records and an
+independent program can repeat.
+
+What the RID required, and what we supply, is a way to eliminate the
+neighbourhoods of touch configurations, where no strict inequality can
+hold and ordinary subdivision cannot finish.
+\citet{SteiningerYurkevichNopertV2} proved the Noperthedron Nopert with a
+global and a local theorem, and identified an exotic viewing direction
+of the RID where their local theorem does not apply; they indicated that its neighbourhood could be treated with
+polynomial inequalities, and reported further difficult regions
+\citep[Section~9.1]{SteiningerYurkevichNopertV2}. Here the aligned
+configurations, the square and pentagon configurations and two
+non-aligned families of touch configurations are all treated by one
+statement, \cref{lem:zoom-lemma}. The idea is to recognise sets of
+configurations that contain no fit for a simple reason, change coordinates
+so that some coordinates measure the distance from such a set, and divide
+a necessary inequality exactly by a power of those distances before
+testing its sign. This is reminiscent of blowing up a singular point in
+algebraic geometry, although we use nothing from that theory. The
+specific ingredients for the RID are the symmetry-reduced domain with its
+fold inequalities, the observation that the non-aligned touch families lie
+in planes where the plug reaches exactly as far as the hole in one screen
+direction, and the explicit zoom covers of \cref{app:zoom-covers}.
+\Cref{thm:main} settles the conjecture of \citet{SteiningerYurkevich2023}
+that the RID is not Rupert.
+
+\subsection{Extensions and possible automation}\label{subsec:extensions-and-possible-automation}
+
+\paragraph{What transfers.}
+The argument uses few properties of the RID beyond its exact vertex
+coordinates, its central symmetry and its symmetry group. For another
+centrally symmetric polyhedron with vertex coordinates in a real number
+field, the Global component applies unchanged, the Local component applies
+in the same form with new covers, and the Domain component needs that
+polyhedron's own reduced domain. The Exotic component's covers are
+specific to the RID, but their construction is not: each consists of a
+no-fit set, an affine change to base and offset coordinates, and the boxes
+and radii of a tube or point zoom. Much of the work is already automatic.
+The zoom cells and their witnesses were found by a program, the parameters
+of each cover amount to a few numbers, and exact arithmetic decides the
+equalities on which the no-fit sets rest. The step that required insight
+was finding the touch configurations and the no-fit sets containing them.
+A natural next step is to apply the method to other polyhedra conjectured
+to be Nopert.
+
+\paragraph{Towards a decision procedure.}
+We expect these techniques to lead to a practical algorithm that decides
+Rupert's property for centrally symmetric polyhedra, once the special cases
+can be enumerated algorithmically. The missing ingredient is a finite
+procedure that finds, for a given polyhedron, every family of touch
+configurations together with a no-fit set containing it, and the points on
+these families where a second distance must be divided out. The aligned
+configurations are always touch configurations, and the exotic viewing
+directions of the Local component might be enumerated: if the component
+fails only where faces are seen edge-on, the candidates are finitely many
+intersections of great circles on the viewing sphere. Non-aligned touch
+families, such as the arcs of \cref{sec:arc-configurations}, need a separate
+analysis, and we do not know whether they always lie in no-fit sets as
+simple as the arc planes. Given such an enumeration, the remaining steps
+are mechanical: placing zoom covers around the families, searching for cells
+and witnesses, and running the subdivision with the resulting collection,
+which would also detect a fit if one existed
+(\cref{subsec:robustly-detecting-potential-rupertness}). We expect this to
+be practical for polyhedra whose vertex coordinates are algebraic of low
+degree, whose symmetry group is large enough to make the reduced
+configuration space small, and which are regular in other respects, as the
+RID is; how far it extends is a question for further work.
+
+The checks performed on the certificate are few and elementary, and
+together with the lemmas of
+\cref{sec:geometric-formulation,sec:symmetry-reduced-domain,sec:reduction-to-exact-arithmetic,sec:global-component,sec:local-component,sec:square-and-pentagon-configurations,sec:arc-configurations,sec:endpoint-and-crossing-configurations}
+they would be natural candidates for formalisation in a proof assistant.
+
+\subsection{History of this work}\label{subsec:history-of-this-work}
+
+The author has worked on this problem since 2024, as a self-motivated
+project pursued in free time, over roughly 1,500 hours. Already in 2024, the
+author developed, independently, the two methods on which the proof for the
+Noperthedron by \citet{SteiningerYurkevichNopertV2} rests: the global
+separation theorem, which became the Global component, and a version of
+their local theorem around aligned configurations, which became the Local
+component. These first versions used an angular parametrisation with
+transcendental functions, less practical than the one used here, together
+with interval arithmetic. The author also knew at that stage about the
+exotic configurations of the RID, where neither method applies, and
+suspected that a polyhedron could be constructed for which the two
+components alone would suffice. Nevertheless, the author chose to pursue
+the case of the RID itself, whose exotic configurations these methods proved
+hard to reach. In the meantime, \citet{SteiningerYurkevichNopertV2}
+constructed the Noperthedron, the first polyhedron proved to be Nopert.
+
+The next approach treated each exotic case with its own collection of
+polynomial inequalities, designed around the geometric features of that
+case. It was sufficient, but considerably more complicated: the proof was
+far more involved, and generating the full certificate required thousands
+of times as much computation as the proof presented here. The zoom lemma of
+\cref{subsec:the-zoom-lemma} then unified all these
+cases, simplifying both the theoretical foundations of the proof and its
+implementation. It also contains the earlier components: the Local
+component is its simplest instance with a distance divided out, and the
+Domain and Global tests are the same idea with nothing divided out.
+
+To complete the work without further delay, AI tools were used to produce
+a well-tested implementation of the final pipeline, to simplify the
+author's research pipelines, which had grown to more than 100,000 lines of
+code over the years, and to help write this article. The ideas, the
+mathematical arguments and the design of the pipeline are the author's.

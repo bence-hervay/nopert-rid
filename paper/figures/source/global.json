@@ -1,0 +1,509 @@
+{
+  "canvas": {
+    "background": "#ffffff",
+    "height_mm": "142",
+    "width_mm": "150"
+  },
+  "layers": [
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "global-a",
+      "source": "global-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "global-a",
+      "source": "global-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "global-a",
+      "source": "global-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "global-a",
+      "source": "global-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "global-a",
+      "source": "global-a",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "global-a-zoom",
+      "source": "global-a",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "global-a-zoom",
+      "source": "global-a",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "global-a-zoom",
+      "source": "global-a",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "global-a-zoom",
+      "source": "global-a",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "global-a-zoom",
+      "source": "global-a",
+      "style": "plug-edges"
+    },
+    {
+      "edge": [
+        1,
+        10
+      ],
+      "kind": "support",
+      "length": "9/20",
+      "marker": "9/200",
+      "panel": "global-a",
+      "source": "global-a",
+      "styles": {
+        "edge": "support-edge",
+        "line": "support-line",
+        "normal": "support-normal",
+        "vertex": "support-vertex"
+      },
+      "vertex": 11
+    },
+    {
+      "edge": [
+        1,
+        10
+      ],
+      "kind": "support",
+      "length": "3/20",
+      "marker": "3/200",
+      "panel": "global-a-zoom",
+      "source": "global-a",
+      "styles": {
+        "edge": "support-edge",
+        "line": "support-line",
+        "normal": "support-normal",
+        "vertex": "support-vertex"
+      },
+      "vertex": 11
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "global-a-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "global-a",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "global-a-zoom",
+      "text": "×10"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "global-b",
+      "source": "global-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "global-b",
+      "source": "global-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "global-b",
+      "source": "global-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "global-b",
+      "source": "global-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "global-b",
+      "source": "global-b",
+      "style": "plug-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "silhouette",
+      "kind": "scene",
+      "panel": "global-b-zoom",
+      "source": "global-b",
+      "style": "hole-fill"
+    },
+    {
+      "body": "hole",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "global-b-zoom",
+      "source": "global-b",
+      "style": "hole-back-edges"
+    },
+    {
+      "body": "hole",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "global-b-zoom",
+      "source": "global-b",
+      "style": "hole-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "back-wireframe",
+      "kind": "scene",
+      "panel": "global-b-zoom",
+      "source": "global-b",
+      "style": "plug-back-edges"
+    },
+    {
+      "body": "plug",
+      "geometry": "front-wireframe",
+      "kind": "scene",
+      "panel": "global-b-zoom",
+      "source": "global-b",
+      "style": "plug-edges"
+    },
+    {
+      "edge": [
+        0,
+        9
+      ],
+      "kind": "support",
+      "length": "9/20",
+      "marker": "9/200",
+      "panel": "global-b",
+      "source": "global-b",
+      "styles": {
+        "edge": "support-edge",
+        "line": "support-line",
+        "normal": "support-normal",
+        "vertex": "support-vertex"
+      },
+      "vertex": 10
+    },
+    {
+      "edge": [
+        0,
+        9
+      ],
+      "kind": "support",
+      "length": "3/20",
+      "marker": "3/200",
+      "panel": "global-b-zoom",
+      "source": "global-b",
+      "styles": {
+        "edge": "support-edge",
+        "line": "support-line",
+        "normal": "support-normal",
+        "vertex": "support-vertex"
+      },
+      "vertex": 10
+    },
+    {
+      "connectors": [
+        {
+          "from": "top-right",
+          "to": "top-left"
+        },
+        {
+          "from": "bottom-right",
+          "to": "bottom-left"
+        }
+      ],
+      "detail": "global-b-zoom",
+      "kind": "inset",
+      "mark_mm": "6/5",
+      "overview": "global-b",
+      "style": "inset"
+    },
+    {
+      "kind": "label",
+      "panel": "global-b-zoom",
+      "text": "×10"
+    }
+  ],
+  "panels": {
+    "global-a": {
+      "viewport_mm": [
+        [
+          "4",
+          "69"
+        ],
+        [
+          "4",
+          "69"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "global-a-zoom": {
+      "viewport_mm": [
+        [
+          "73",
+          "146"
+        ],
+        [
+          "4",
+          "69"
+        ]
+      ],
+      "world": [
+        [
+          "-4932184859/1090519040",
+          "-3707448091/1090519040"
+        ],
+        [
+          "12671205/8388608",
+          "21059813/8388608"
+        ]
+      ]
+    },
+    "global-b": {
+      "viewport_mm": [
+        [
+          "4",
+          "69"
+        ],
+        [
+          "73",
+          "138"
+        ]
+      ],
+      "world": [
+        [
+          "-5",
+          "5"
+        ],
+        [
+          "-5",
+          "5"
+        ]
+      ]
+    },
+    "global-b-zoom": {
+      "viewport_mm": [
+        [
+          "73",
+          "146"
+        ],
+        [
+          "73",
+          "138"
+        ]
+      ],
+      "world": [
+        [
+          "-4619097409/1090519040",
+          "-3394360641/1090519040"
+        ],
+        [
+          "29763557/16777216",
+          "46540773/16777216"
+        ]
+      ]
+    }
+  },
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 150
+  },
+  "sources": {
+    "global-a": {
+      "coordinates": [
+        [
+          "7/48",
+          "0"
+        ],
+        [
+          "7/80",
+          "0"
+        ],
+        [
+          "1/20",
+          "0"
+        ],
+        [
+          "-1/20",
+          "0"
+        ],
+        [
+          "1/4",
+          "0"
+        ]
+      ],
+      "kind": "configuration"
+    },
+    "global-b": {
+      "coordinates": [
+        [
+          "3/16",
+          "0"
+        ],
+        [
+          "23/80",
+          "0"
+        ],
+        [
+          "-1/40",
+          "0"
+        ],
+        [
+          "-13/40",
+          "0"
+        ],
+        [
+          "-1/8",
+          "0"
+        ]
+      ],
+      "kind": "configuration"
+    }
+  },
+  "styles": {
+    "hole-back-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#e08214",
+        "dash_mm": "2/5",
+        "width_mm": "1/10"
+      }
+    },
+    "hole-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#e08214",
+        "width_mm": "1/10"
+      }
+    },
+    "hole-fill": {
+      "fill": "#fcefe0",
+      "opacity": "1",
+      "stroke": null
+    },
+    "inset": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#404040",
+        "width_mm": "1/6"
+      }
+    },
+    "plug-back-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#2166ac",
+        "dash_mm": "2/5",
+        "width_mm": "1/10"
+      }
+    },
+    "plug-edges": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#2166ac",
+        "width_mm": "1/10"
+      }
+    },
+    "support-edge": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#b35806",
+        "width_mm": "1/2"
+      }
+    },
+    "support-line": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#1a1a1a",
+        "width_mm": "1/7"
+      }
+    },
+    "support-normal": {
+      "fill": null,
+      "opacity": "1",
+      "stroke": {
+        "color": "#1b7837",
+        "width_mm": "1/4"
+      }
+    },
+    "support-vertex": {
+      "fill": "#08306b",
+      "opacity": "1",
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "certificate": "rid.cert",
+  "root": "",
+  "max_depth": 4096,
+  "threads": 16
+}

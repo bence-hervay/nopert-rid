@@ -1,0 +1,92 @@
+% !TEX root = ../main.tex
+\section{Symmetry data and checks}\label{app:symmetry-data-and-checks}
+
+This appendix gives the finite symmetry data and calculations used in
+\cref{sec:symmetry-reduced-domain}. The symmetry actions, representative
+selection and resulting domain inequalities are stated and explained there.
+All finite comparisons below use exact arithmetic in $\mathbb Q(\sqrt5)$.
+
+\subsection{Quaternion families and the full symmetry group}\label{app:quaternion-families-and-the-full-symmetry-group}
+
+The set $\mathcal Q$ defined in
+\cref{subsec:symmetries-preserve-the-projection-problem} consists of the
+unit quaternions in these three families:
+\[
+\begin{array}{lr}
+  \text{all coordinate permutations of }(\pm1,0,0,0), & 8,\\[2pt]
+  \frac12(\pm1,\pm1,\pm1,\pm1), & 16,\\[2pt]
+  \text{even coordinate permutations of }
+    \frac12(0,\pm1,\pm\varphi,\pm(-1+\varphi)), & 96.
+\end{array}
+\]
+Signs are chosen independently. There are 120 quaternions altogether: the
+unit icosians, which form the binary icosahedral group
+\citep{ConwaySmith2003}.
+The two quaternions in each pair $g,-g$ represent the same rotation.
+Composing this rotation with central inversion gives an orientation-reversing
+symmetry. The 60 quaternion pairs therefore give 60 rotations in $\mathcal G$
+and 60 orientation-reversing symmetries in $-\mathcal G$.
+
+The finite calculations behind this description use the exact vertex
+coordinates from \cref{eq:rhombicosidodecahedron-vertices}. They verify
+that every listed quaternion has norm one, that the represented rotations
+are distinct up to quaternion sign and closed under composition, and
+that each takes every vertex to another vertex. All these checks use exact
+arithmetic in $\mathbb Q(\sqrt5)$.
+
+\paragraph{Completeness of the symmetry list.}
+To see that there are no further body symmetries, fix an ordered triangle
+formed by three vertices at pairwise distance two. Exact enumeration gives
+20 unordered triangles, with each vertex belonging to exactly one, and verifies
+that the three position vectors of each triangle are linearly independent.
+A body symmetry must take the chosen triangle to one of them. There are
+60 choices for its first image vertex and two for its second; the third is
+then fixed. The three independent images determine the linear map, so
+there are at most $60\cdot2=120$ orthogonal body symmetries. The 60
+rotations and their products with central inversion attain this bound.
+Of the 60 orientation-reversing symmetries, 15 are reflections; the whole
+group is the full icosahedral group, isomorphic to $A_5\times\{\pm1\}$.
+
+\subsection{Reflection normals and the viewing cone}\label{app:reflection-normals-and-the-viewing-cone}
+
+The fifteen normal lines come from the quaternions in $\mathcal Q$ whose
+scalar part is zero. Orient their unit normals $\mathbf n$ toward
+$\mathbf h=(1,2,9)$ as in \cref{subsec:rotation-and-reflection-reduction}.
+The intersection of their closed halfspaces $\mathbf n\cdot\mathbf u\ge0$ is the cone in
+\cref{eq:viewing-cone}. This identification needs only two finite checks
+on the listed normals.
+For the inclusion of the intersection in the cone, note that the three
+planes bounding the cone are among the fifteen, with inward normals
+proportional to $(1,0,0)$, $(0,1,0)$ and $(-\varphi,-\varphi^2,1)$.
+For the reverse inclusion, every oriented normal has nonnegative dot product with each of
+the three vectors
+\[
+  (0,0,1),\qquad(1,0,\varphi),\qquad(0,1,\varphi^2).
+\]
+These vectors generate the whole cone: a vector satisfying
+\cref{eq:viewing-cone} can be written as
+\[
+  \mathbf u=u_1(1,0,\varphi)+u_2(0,1,\varphi^2)
+    +(u_3-\varphi u_1-\varphi^2u_2)(0,0,1),
+\]
+with all coefficients nonnegative, so every vector of the cone lies in all
+fifteen halfspaces.
+The normal orientations and these dot products are checked exactly in
+$\mathbb Q(\sqrt5)$.
+
+\subsection{Selected quaternions for the rotation comparisons}\label{app:selected-quaternions-for-the-rotation-comparisons}
+
+The representative $(1,\mathbf r)$ has the largest scalar part among its
+right multiples by elements of $\mathcal Q$, which gives the inequality
+\[
+  \operatorname{scalar}((1,\mathbf r)g)\le1
+\]
+for every $g\in\mathcal Q$. The domain $D$ uses only twelve of them, those
+in \cref{eq:rotation-comparisons}; the others hold as well, but $D$ needs
+only to contain a representative of every configuration.
+Use cyclic subscripts, with $r_4=r_1$.
+For each cyclic pair $i,i+1$ and signs $\epsilon,\delta\in\{-1,1\}$,
+$\mathcal Q$ contains a quaternion with scalar part $\varphi/2$ and vector
+coordinates $-\epsilon/2$ and $-(-1+\varphi)\delta/2$ in those two
+positions, with the remaining coordinate zero. Substituting these twelve
+quaternions gives precisely \cref{eq:rotation-comparisons}.

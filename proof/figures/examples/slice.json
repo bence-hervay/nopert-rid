@@ -1,0 +1,63 @@
+{
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 200
+  },
+  "canvas": {"width_mm": "120", "height_mm": "140", "background": "#ffffff"},
+  "sources": {
+    "slice": {
+      "kind": "slice",
+      "threads": 4,
+      "slice": {
+        "origin": ["0", "1/10", "0", "0", "0"],
+        "horizontal": ["1", "0", "0", "0", "0"],
+        "vertical": ["0", "0", "0", "0", "1"],
+        "plot": [["0", "2/3"], ["-2/5", "2/5"]],
+        "thickness": ["0", "0", "0", "0", "0"],
+        "max_depth": 10,
+        "max_cells": 4096,
+        "components": {"Domain": true, "Global": true, "Local": true,
+          "Exotic": ["square", "pentagon", "arc+", "arc-", "endpoint+", "endpoint-", "crossing+", "crossing-"]}
+      }
+    }
+  },
+  "styles": {
+    "domain": {"fill": "#bdbdbd", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"},
+    "global": {"fill": "#9ecae1", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"},
+    "local": {"fill": "#a1d99b", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"},
+    "square": {"fill": "#fdae6b", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"},
+    "pentagon": {"fill": "#fd8d3c", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"},
+    "arc": {"fill": "#bcbddc", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"},
+    "endpoint": {"fill": "#fa9fb5", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"},
+    "crossing": {"fill": "#f768a1", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"},
+    "unresolved": {"fill": "#ffff99", "stroke": {"color": "#b00000", "width_mm": "1/10"}, "opacity": "1"},
+    "outside": {"fill": "#f0f0f0", "stroke": {"color": "#ffffff", "width_mm": "1/20"}, "opacity": "1"}
+  },
+  "panels": {
+    "plot": {"viewport_mm": [["10", "110"], ["10", "130"]], "world": [["0", "2/3"], ["-2/5", "2/5"]]}
+  },
+  "layers": [
+    {
+      "kind": "cells",
+      "panel": "plot",
+      "source": "slice",
+      "styles": {
+        "Domain": "domain",
+        "Global": "global",
+        "Local": "local",
+        "Exotic": {
+          "square": "square",
+          "pentagon": "pentagon",
+          "arc+": "arc",
+          "arc-": "arc",
+          "endpoint+": "endpoint",
+          "endpoint-": "endpoint",
+          "crossing+": "crossing",
+          "crossing-": "crossing"
+        },
+        "unresolved": "unresolved",
+        "outside": "outside"
+      }
+    }
+  ]
+}

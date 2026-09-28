@@ -1,0 +1,143 @@
+\documentclass[a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx,booktabs}
+\usepackage[authoryear,square,semicolon]{natbib}
+\usepackage{tocloft,sectsty,fancyhdr}
+\usepackage{xcolor}
+\definecolor{linkblue}{RGB}{30,80,150}
+% Figure colours, so that captions name each colour in that colour.
+\definecolor{figHole}{HTML}{E08214}
+\definecolor{figPlug}{HTML}{2166AC}
+\definecolor{figNormal}{HTML}{1B7837}
+\definecolor{figSupport}{HTML}{B35806}
+\definecolor{figVertex}{HTML}{08306B}
+\definecolor{figGrey}{HTML}{808080}
+\definecolor{figDomain}{HTML}{BDBDBD}
+\definecolor{figGlobal}{HTML}{9ECAE1}
+\definecolor{figLocal}{HTML}{74C476}
+\definecolor{figSquare}{HTML}{FDAE6B}
+\definecolor{figPentagon}{HTML}{E6550D}
+\definecolor{figArc}{HTML}{9E9AC8}
+\definecolor{figEndpoint}{HTML}{FA9FB5}
+\definecolor{figCrossing}{HTML}{C51B8A}
+\definecolor{figFamilyB}{HTML}{FDD49E}
+\definecolor{figSheared}{HTML}{A1D99B}
+\definecolor{figTileLight}{HTML}{C7E9C0}
+\definecolor{figTileDark}{HTML}{31A354}
+\definecolor{figQuotient}{HTML}{2E6FAD}
+% Caption text uses the figure colour, or for pale fills the next darker
+% shade of the same hue, so that it stays legible.
+\colorlet{figTextHole}{figHole}
+\colorlet{figTextPlug}{figPlug}
+\colorlet{figTextNormal}{figNormal}
+\colorlet{figTextSupport}{figSupport}
+\colorlet{figTextVertex}{figVertex}
+\colorlet{figTextGrey}{figGrey}
+\definecolor{figTextDomain}{HTML}{969696}
+\definecolor{figTextGlobal}{HTML}{6BAED6}
+\definecolor{figTextLocal}{HTML}{41AB5D}
+\definecolor{figTextSquare}{HTML}{FD8D3C}
+\colorlet{figTextPentagon}{figPentagon}
+\definecolor{figTextArc}{HTML}{807DBA}
+\definecolor{figTextEndpoint}{HTML}{F768A1}
+\colorlet{figTextCrossing}{figCrossing}
+\definecolor{figTextFamilyB}{HTML}{FC8D59}
+\definecolor{figTextSheared}{HTML}{74C476}
+\definecolor{figTextTileLight}{HTML}{A1D99B}
+\definecolor{figTextTileDark}{HTML}{238B45}
+\colorlet{figTextQuotient}{figQuotient}
+\newcommand{\fc}[2]{\textcolor{figText#1}{#2}}
+\usepackage[colorlinks,allcolors=linkblue,linktoc=all]{hyperref}
+\usepackage[nameinlink,noabbrev,capitalise]{cleveref}
+
+\allsectionsfont{\raggedright}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\rightmark}}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+\setcounter{tocdepth}{3}
+\setlength{\cftbeforesecskip}{0pt}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% Natbib initializes \@cite at document start; its group confines this font change.
+\AddToHook{begindocument/end}{%
+  \AddToHook{cmd/@cite/before}{\normalfont}}
+\urlstyle{same}
+\providecommand{\doi}[1]{\href{https://doi.org/#1}{doi:~\nolinkurl{#1}}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+
+\title{Non-Rupertness of the Rhombicosidodecahedron}
+\author{Bence Hervay}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{center}
+\vspace*{-1.5em}
+\includegraphics[width=26mm]{figures/rid}
+\end{center}
+\begin{abstract}
+Can a solid pass through a straight tunnel drilled through an identical copy
+of itself? Although it may seem counterintuitive, it turns out that a cube
+can pass through itself in this way: John Wallis showed this in 1693,
+settling a wager of Prince Rupert of the Rhine, after whom the property is
+called \emph{Rupert's property}. All five Platonic solids turned out to share
+it, and for a long time it seemed that every convex polyhedron might.
+Passages were found for many highly regular solids, but some resisted
+extensive randomised searches. Steininger and Yurkevich conjectured that the
+rhombicosidodecahedron (RID), a highly regular Archimedean solid, does not
+pass through itself, and a recent major result of theirs is a first
+polyhedron without Rupert's property, the Noperthedron, constructed for the
+purpose. We prove their conjecture for the RID using a computer-assisted
+branch-and-bound elimination, which covers the entire symmetry-reduced
+configuration space with $192{,}696$ regions, each verified with exact
+arithmetic in $\mathbb Q(\sqrt5)$ to contain no passage. The RID is thereby
+\textbf{the first Archimedean solid proved not to be Rupert}, and the first
+such polyhedron that was not constructed for the purpose. Our main novel
+addition is the \emph{zoom lemma}. The real obstacle is formed by the
+configurations in which the two copies touch without either passing or
+sticking out: no strict inequality holds there, so subdivision alone can
+never eliminate their neighbourhoods. Near a set of configurations known to
+contain no passage, the zoom lemma divides a necessary inequality exactly by
+the distance from that set, so that one exact sign test eliminates a whole
+neighbourhood, touching configurations included; the same lemma handles
+every such case of the proof.
+\end{abstract}
+{\small\tableofcontents}
+
+\input{sections/1-introduction}
+\input{sections/2-geometric-formulation}
+\input{sections/3-symmetry-reduced-domain}
+\input{sections/4-branch-and-bound-elimination-in-the-reduced-domain}
+\input{sections/5-reduction-to-exact-arithmetic}
+\input{sections/6-global-component}
+\input{sections/7-local-component}
+\input{sections/8-square-and-pentagon-configurations}
+\input{sections/9-arc-configurations}
+\input{sections/10-endpoint-and-crossing-configurations}
+\input{sections/11-generating-and-verifying-the-certificate}
+\input{sections/12-remarks-and-further-directions}
+
+\appendix
+\input{appendices/a-symmetry-data-and-checks}
+\input{appendices/b-zoom-covers}
+\clearpage
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

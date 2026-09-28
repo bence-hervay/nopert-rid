@@ -1,0 +1,18 @@
+{"format":"rid-figures-partition/1","policy":"65c13764df7a6acf6563e4026025a7305d157d70cb9f3bb40803aeeca64418a5","slice":{"origin":["0","1/10","0","0","0"],"horizontal":["1","0","0","0","0"],"vertical":["0","0","0","0","1"],"plot":[["7/32","9/32"],["-1/32","1/32"]],"thickness":["0","0","0","0","0"],"max_depth":14,"max_cells":131072,"components":{"Domain":true,"Global":true,"Local":true,"Exotic":[]}},"cells":[
+  {"path":"0000","outcome":{"eliminated":{"component":"Global"}}},
+  {"path":"0001","outcome":{"eliminated":{"component":"Local"}}},
+  {"path":"0010","outcome":{"eliminated":{"component":"Global"}}},
+  {"path":"0011","outcome":{"eliminated":{"component":"Local"}}},
+  {"path":"0100","outcome":{"eliminated":{"component":"Local"}}},
+  {"path":"0101","outcome":{"eliminated":{"component":"Global"}}},
+  {"path":"0110","outcome":{"eliminated":{"component":"Local"}}},
+  {"path":"0111","outcome":{"eliminated":{"component":"Global"}}},
+  {"path":"1000","outcome":{"eliminated":{"component":"Global"}}},
+  {"path":"1001","outcome":{"eliminated":{"component":"Local"}}},
+  {"path":"1010","outcome":{"eliminated":{"component":"Global"}}},
+  {"path":"1011","outcome":{"eliminated":{"component":"Local"}}},
+  {"path":"1100","outcome":{"eliminated":{"component":"Local"}}},
+  {"path":"1101","outcome":{"eliminated":{"component":"Global"}}},
+  {"path":"1110","outcome":{"eliminated":{"component":"Local"}}},
+  {"path":"1111","outcome":{"eliminated":{"component":"Global"}}}
+]}

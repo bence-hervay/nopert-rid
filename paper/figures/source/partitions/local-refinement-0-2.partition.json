@@ -1,0 +1,3 @@
+{"format":"rid-figures-partition/1","policy":"65c13764df7a6acf6563e4026025a7305d157d70cb9f3bb40803aeeca64418a5","slice":{"origin":["0","1/10","0","0","0"],"horizontal":["1","0","0","0","0"],"vertical":["0","0","0","0","1"],"plot":[["31/128","33/128"],["-1/128","1/128"]],"thickness":["0","0","0","0","0"],"max_depth":14,"max_cells":131072,"components":{"Domain":true,"Global":true,"Local":true,"Exotic":[]}},"cells":[
+  {"path":"","outcome":{"eliminated":{"component":"Local"}}}
+]}

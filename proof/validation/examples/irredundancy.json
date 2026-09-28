@@ -1,0 +1,1 @@
+{"catalogue": "validation/catalogue/targets.json", "transcript": "irredundancy.jsonl", "threads": 16, "scales": [4, 8, 12, 16, 24, 32, 64, 128, 256, 512, 1024, 2048], "selection": null}

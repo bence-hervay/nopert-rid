@@ -1,0 +1,51 @@
+{
+  "png": {
+    "converter": "rsvg-convert",
+    "dpi": 200
+  },
+  "canvas": {"width_mm": "180", "height_mm": "100", "background": "#ffffff"},
+  "sources": {
+    "box": {
+      "kind": "box",
+      "axes": [["3/16", "7/32"], ["3/32", "7/64"], ["1/8", "9/64"], ["1/16", "5/64"], ["-1/32", "-1/64"]]
+    },
+    "midpoint": {
+      "kind": "configuration",
+      "coordinates": [["13/64", "0"], ["13/128", "0"], ["17/128", "0"], ["9/128", "0"], ["-3/128", "0"]]
+    }
+  },
+  "styles": {
+    "hole-edges": {"fill": null, "stroke": {"color": "#ff8000", "width_mm": "7/50"}, "opacity": "1"},
+    "plug-edges": {"fill": null, "stroke": {"color": "#0080ff", "width_mm": "7/100"}, "opacity": "1"},
+    "inset": {"fill": null, "stroke": {"color": "#404040", "width_mm": "1/5"}, "opacity": "1"},
+    "hole-envelope": {"fill": "#ff8000", "stroke": null, "opacity": "1/4"},
+    "plug-envelope": {"fill": "#0080ff", "stroke": null, "opacity": "1/4"},
+    "plug-vertices": {"fill": null, "stroke": {"color": "#004080", "width_mm": "1/20"}, "opacity": "1"}
+  },
+  "panels": {
+    "overview": {"viewport_mm": [["5", "95"], ["5", "95"]], "world": [["-5", "5"], ["-5", "5"]]},
+    "detail": {
+      "viewport_mm": [["110", "170"], ["20", "80"]],
+      "world": [["11/20", "21/20"], ["-23/5", "-41/10"]]
+    }
+  },
+  "layers": [
+    {"kind": "scene", "panel": "overview", "source": "box", "body": "hole", "geometry": "edge-envelopes", "style": "hole-envelope"},
+    {"kind": "scene", "panel": "overview", "source": "box", "body": "plug", "geometry": "edge-envelopes", "style": "plug-envelope"},
+    {"kind": "scene", "panel": "overview", "source": "midpoint", "body": "hole", "geometry": "wireframe", "style": "hole-edges"},
+    {"kind": "scene", "panel": "overview", "source": "midpoint", "body": "plug", "geometry": "wireframe", "style": "plug-edges"},
+    {"kind": "scene", "panel": "detail", "source": "box", "body": "hole", "geometry": "edge-envelopes", "style": "hole-envelope"},
+    {"kind": "scene", "panel": "detail", "source": "box", "body": "plug", "geometry": "edge-envelopes", "style": "plug-envelope"},
+    {"kind": "scene", "panel": "detail", "source": "box", "body": "plug", "geometry": "vertex-envelopes", "style": "plug-vertices"},
+    {"kind": "scene", "panel": "detail", "source": "midpoint", "body": "hole", "geometry": "wireframe", "style": "hole-edges"},
+    {"kind": "scene", "panel": "detail", "source": "midpoint", "body": "plug", "geometry": "wireframe", "style": "plug-edges"},
+    {
+      "kind": "inset",
+      "overview": "overview",
+      "detail": "detail",
+      "connectors": [{"from": "top-right", "to": "top-left"}, {"from": "bottom-right", "to": "bottom-left"}],
+      "mark_mm": "0",
+      "style": "inset"
+    }
+  ]
+}

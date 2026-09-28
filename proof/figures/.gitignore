@@ -1,0 +1,3 @@
+/target
+# Generated PNG previews: committed only when the author explicitly asks.
+*.png

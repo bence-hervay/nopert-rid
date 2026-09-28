@@ -1,0 +1,7 @@
+target/
+__pycache__/
+*.png
+/proof/rid.cert
+/audit/results*.jsonl
+/audit/*-result.json
+.venv/
