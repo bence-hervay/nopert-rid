@@ -7,6 +7,7 @@ provides `latexmk` (which also copies the result from `build/main.pdf` to
 
 ```sh
 latexmk main.tex
+./arxiv.sh        # then: arxiv.tar.gz, the source as submitted to arXiv
 ```
 
 The figures in [`figures/`](figures/) are drawn by the figure tool of the
